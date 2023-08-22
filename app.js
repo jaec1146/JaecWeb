@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT ?? 8080;
+const port = process.env.PORT ?? 3000;
 
 app.use(express.static('public'))
 
@@ -9,24 +9,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
-
-    MyButton()
+    console.log(`App listening on port ${port}`);   
 })
-
-function MyButton() {
-    return (
-      <button>
-        Soy un botón
-      </button>
-    );
-  }
-  
-export default function MyApp() {
-return (
-    <div>
-    <h1>Bienvenido a mi aplicación</h1>
-    <MyButton />
-    </div>
-);
-}
