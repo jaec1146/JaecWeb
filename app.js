@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/TwitterFollowCard', (req, res) => {
-    res.render('proyects/twitter-follow-card/dist');
+    res.render('proyects/twitter-follow-card/dist/index.html');
 })
 
 app.listen(port, () => {
