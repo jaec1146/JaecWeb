@@ -12,6 +12,10 @@ app.get('/TwitterFollowCard', (req, res) => {
     res.render('proyects/twitter-follow-card/dist/index.html');
 })
 
+app.get('/TicTacToe', (req, res) => {
+    res.render('/proyects/tic-tac-toe/dist/index.html');
+})
+
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);   
 })
