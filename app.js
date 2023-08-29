@@ -10,11 +10,11 @@ app.get('/', (req, res) => {
 
 app.get('/TwitterFollowCard', (req, res)=>{
     console.log('entre')
-    res.static('/JaecWeb/proyects/twitter-follow-card/dist');
+    res.static('../proyects/twitter-follow-card/dist');
 });
 
 app.get('/TicTacToe', (req, res) => {
-    res.render('/proyects/tic-tac-toe/dist/');
+    res.render('../proyects/tic-tac-toe/dist');
 })
 
 app.listen(port,()=>{
