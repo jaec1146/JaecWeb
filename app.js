@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/TwitterFollowCard', (req, res)=>{
     console.log('entre')
-    res.static('./proyects/twitter-follow-card/dist');
+    res.static('/JaecWeb/proyects/twitter-follow-card/dist');
 });
 
 app.get('/TicTacToe', (req, res) => {
