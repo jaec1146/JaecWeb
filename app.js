@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT ?? 3000;
 
-app.use(express.static('/JaecWeb/proyects/twitter-follow-card/dist'))
+app.use(express.static('proyects/twitter-follow-card/dist/index.html'))
 
 app.get('/', (req, res) => {
     res.redirect('/');
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/TwitterFollowCard', (req, res)=>{
     console.log('entre')
-    express.static('/JaecWeb/proyects/twitter-follow-card/dist');
+    express.static('proyects/twitter-follow-card/dist');
 });
 
 app.get('/TicTacToe', (req, res) => {
