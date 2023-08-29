@@ -1,22 +1,22 @@
 const express = require('express');
 const app = express();
-const router = express.Router();
 const port = process.env.PORT ?? 3000;
 
-app.use(express.static('public'))
+app.use(express.static('/JaecWeb/proyects/twitter-follow-card/dist'))
 
 app.get('/', (req, res) => {
     res.redirect('/');
 })
 
-router.get('/TwitterFollowCard', (req, res) => {
-    res.render('proyects/twitter-follow-card/dist/index.html');
-})
+app.get('/TwitterFollowCard', (req, res)=>{
+    console.log('entre')
+    express.static('/JaecWeb/proyects/twitter-follow-card/dist');
+});
 
-router.get('/TicTacToe', (req, res) => {
+app.get('/TicTacToe', (req, res) => {
     res.render('/proyects/tic-tac-toe/dist/index.html');
 })
 
-app.listen(port, () => {
-    console.log(`App listening on port ${port}`);   
+app.listen(port,()=>{
+    console.log(`puerto: ${port}.`)
 })

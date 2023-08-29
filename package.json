@@ -13,5 +13,8 @@
     "gh-pages": "^6.0.0"
   },
   "main": "app.js",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
