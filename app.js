@@ -5,7 +5,7 @@ const port = process.env.PORT ?? 3000;
 app.use(express.static('proyects/twitter-follow-card/dist/index.html'))
 
 app.get('/', (req, res) => {
-    res.redirect('/');
+    res.redirect('/proyects/twitter-follow-card/dist/index.html');
 })
 
 app.get('/TwitterFollowCard', (req, res)=>{
