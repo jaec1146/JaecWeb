@@ -3,7 +3,7 @@ const app = express();
 const app2 = express()
 const port = process.env.PORT ?? 3000;
 
-app.use(express.static('publico'))
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.redirect('/');
