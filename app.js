@@ -3,7 +3,7 @@ const app = express();
 const app2 = express()
 const port = process.env.PORT ?? 3000;
 
-app.use(express.static('/JaecWeb/proyects/tic-tac-toe/dist'))
+app.use(express.static('JaecWeb/proyects/tic-tac-toe/dist'))
 
 app.get('/', (req, res) => {
     res.redirect('/');
