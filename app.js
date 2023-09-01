@@ -3,7 +3,7 @@ const app = express();
 const app2 = express()
 const port = process.env.PORT ?? 3000;
 
-app.use(express.static('proyects/tic-tac-toe/dist'))
+app.use(express.static('publico'))
 
 app.get('/', (req, res) => {
     res.redirect('/');
@@ -11,11 +11,11 @@ app.get('/', (req, res) => {
 
 app.get('/TwitterFollowCard', (req, res)=>{
     console.log('entre')
-    res.static('../proyects/twitter-follow-card/dist');
+    res.static('proyects/twitter-follow-card/dist');
 });
 
 app.get('/TicTacToe', (req, res) => {
-    res.render('../proyects/tic-tac-toe/dist');
+    res.render('proyects/tic-tac-toe/dist');
 })
 
 app.listen(port,()=>{
